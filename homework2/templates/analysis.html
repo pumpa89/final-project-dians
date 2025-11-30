@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis & Comparison - Crypto Analyzer</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CRYPTODATA</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-list.html" class="nav-link">Crypto List</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-details.html" class="nav-link">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="analysis.html" class="nav-link active">Analysis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1>Crypto Analysis & Comparison</h1>
+            <p>Compare cryptocurrencies and analyze technical indicators</p>
+        </div>
+
+        <!-- Technical Analysis Section -->
+        <div class="technical-analysis-section">
+            <h2>Technical Analysis Tools</h2>
+            
+            <div class="analysis-controls">
+                <div class="analysis-parameter">
+                    <label for="indicator-select">Technical Indicator:</label>
+                    <select id="indicator-select">
+                        <option value="sma">Simple Moving Average (SMA)</option>
+                        <option value="ema">Exponential Moving Average (EMA)</option>
+                        <option value="rsi">Relative Strength Index (RSI)</option>
+                        <option value="macd">MACD</option>
+                        <option value="bollinger">Bollinger Bands</option>
+                    </select>
+                </div>
+                
+                <div class="analysis-parameter">
+                    <label for="period-select">Time Period:</label>
+                    <select id="period-select">
+                        <option value="24h">24 Hours</option>
+                        <option value="7d">7 Days</option>
+                        <option value="30d">30 Days</option>
+                        <option value="90d">90 Days</option>
+                        <option value="1y">1 Year</option>
+                    </select>
+                </div>
+                
+                <button class="btn btn-primary" id="analyze-button">Run Analysis</button>
+            </div>
+
+            <!-- Analysis Results -->
+            <div id="analysis-results" class="analysis-results" style="display: none;">
+                <h3>Analysis Results</h3>
+                <div class="analysis-chart">
+                    <div class="chart-container">
+                        <div class="chart-placeholder">
+                            <p>Technical Analysis Chart</p>
+                            <p>Indicator visualization will appear here</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="analysis-insights">
+                    <h4>Key Insights</h4>
+                    <div class="insights-grid">
+                        <div class="insight-card">
+                            <h5>Trend Analysis</h5>
+                            <p id="trend-analysis">-</p>
+                        </div>
+                        <div class="insight-card">
+                            <h5>Support/Resistance</h5>
+                            <p id="support-resistance">-</p>
+                        </div>
+                        <div class="insight-card">
+                            <h5>Volatility</h5>
+                            <p id="volatility">-</p>
+                        </div>
+                        <div class="insight-card">
+                            <h5>Recommendation</h5>
+                            <p id="recommendation">-</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 CRYPTODATA. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="../scripts/api-client.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/analysis.js"></script>
+</body>
+</html>

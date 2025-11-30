@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRYPTODATA</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CRYPTODATA</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-list.html" class="nav-link">Crypto List</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-details.html" class="nav-link">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="analysis.html" class="nav-link">Analysis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero-section">
+            <h1>CRYPTODATA</h1>
+            
+            <div class="hero-stats">
+                <div class="stat-card">
+                    <h3>Total Cryptocurrencies</h3>
+                    <p class="stat-number">369</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Total Market Cap</h3>
+                    <p class="stat-number">$2.1T+</p>
+                </div>
+                <div class="stat-card">
+                    <h3>Largest 24h Gain</h3>
+                    <p class="stat-number positive">+12.4%</p>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+                <a href="crypto-list.html" class="btn btn-primary">View All Cryptocurrencies</a>
+
+            </div>
+        </div>
+
+        <!-- Top 6 Crypto on Homepage -->
+        <section class="top-crypto">
+            <h2>Top 6 Cryptocurrencies</h2>
+            <div class="crypto-grid">
+                <!-- Bitcoin -->
+                <div class="crypto-card">
+                    <div class="crypto-header">
+                        <img src="https://coin-images.coingecko.com/coins/images/1/large/bitcoin.png" alt="Bitcoin">
+                        <div>
+                            <h3>Bitcoin (BTC)</h3>
+                            <p class="crypto-price">$87,050</p>
+                        </div>
+                    </div>
+                    <div class="crypto-details">
+                        <p>Market Cap: <strong>$1.74T</strong></p>
+                        <p class="change positive">+3.03% (24h)</p>
+                    </div>
+                </div>
+
+                <!-- Ethereum -->
+                <div class="crypto-card">
+                    <div class="crypto-header">
+                        <img src="https://coin-images.coingecko.com/coins/images/279/large/ethereum.png" alt="Ethereum">
+                        <div>
+                            <h3>Ethereum (ETH)</h3>
+                            <p class="crypto-price">$2,828</p>
+                        </div>
+                    </div>
+                    <div class="crypto-details">
+                        <p>Market Cap: <strong>$342B</strong></p>
+                        <p class="change positive">+3.00% (24h)</p>
+                    </div>
+                </div>
+
+                <!-- Tether -->
+                <div class="crypto-card">
+                    <div class="crypto-header">
+                        <img src="https://coin-images.coingecko.com/coins/images/325/large/Tether.png" alt="Tether">
+                        <div>
+                            <h3>Tether (USDT)</h3>
+                            <p class="crypto-price">$1.00</p>
+                        </div>
+                    </div>
+                    <div class="crypto-details">
+                        <p>Market Cap: <strong>$184B</strong></p>
+                        <p class="change neutral">+0.01% (24h)</p>
+                    </div>
+                </div>
+
+                <!-- XRP -->
+                <div class="crypto-card">
+                    <div class="crypto-header">
+                        <img src="https://coin-images.coingecko.com/coins/images/44/large/xrp-symbol-white-128.png" alt="XRP">
+                        <div>
+                            <h3>XRP (XRP)</h3>
+                            <p class="crypto-price">$2.07</p>
+                        </div>
+                    </div>
+                    <div class="crypto-details">
+                        <p>Market Cap: <strong>$124B</strong></p>
+                        <p class="change positive">+6.47% (24h)</p>
+                    </div>
+                </div>
+
+                <!-- BNB -->
+                <div class="crypto-card">
+                    <div class="crypto-header">
+                        <img src="https://coin-images.coingecko.com/coins/images/825/large/bnb-icon2_2x.png" alt="BNB">
+                        <div>
+                            <h3>BNB (BNB)</h3>
+                            <p class="crypto-price">$849</p>
+                        </div>
+                    </div>
+                    <div class="crypto-details">
+                        <p>Market Cap: <strong>$117B</strong></p>
+                        <p class="change positive">+2.73% (24h)</p>
+                    </div>
+                </div>
+
+                <!-- Solana -->
+                <div class="crypto-card">
+                    <div class="crypto-header">
+                        <img src="https://coin-images.coingecko.com/coins/images/4128/large/solana.png" alt="Solana">
+                        <div>
+                            <h3>Solana (SOL)</h3>
+                            <p class="crypto-price">$132.38</p>
+                        </div>
+                    </div>
+                    <div class="crypto-details">
+                        <p>Market Cap: <strong>$74.3B</strong></p>
+                        <p class="change positive">+3.61% (24h)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 CRYPTODATA. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/api-client.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/crypto-list.js"></script> 
+</body>
+</html>

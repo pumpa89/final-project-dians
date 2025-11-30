@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto List - CRYPTODATA</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CRYPTODATA</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-list.html" class="nav-link active">Crypto List</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-details.html" class="nav-link">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="analysis.html" class="nav-link">Analysis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="page-header">
+            <h1>Cryptocurrency List</h1>
+            <p>Browse all 369 cryptocurrencies with real-time data</p>
+        </div>
+
+        <!-- Filters and Search -->
+        <div class="filters-section">
+            <div class="search-box">
+                <input type="text" id="search-input" placeholder="Search by name or symbol...">
+                <button class="btn btn-primary">Search</button>
+            </div>
+            
+            <div class="filter-controls">
+                <select id="market-cap-filter">
+                    <option value="">All Market Caps</option>
+                    <option value="top10">Top 10</option>
+                    <option value="top50">Top 50</option>
+                    <option value="top100">Top 100</option>
+                </select>
+                
+                <select id="price-change-filter">
+                    <option value="">All Changes</option>
+                    <option value="positive">Positive 24h</option>
+                    <option value="negative">Negative 24h</option>
+                </select>
+                
+                <button class="btn btn-secondary" id="reset-filters">Reset Filters</button>
+            </div>
+        </div>
+
+        <!-- Crypto Table -->
+        <div class="crypto-table-container">
+            <table class="crypto-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Name</th>
+                        <th>Price</th>
+                        <th>24h Change</th>
+                        <th>Market Cap</th>
+                        <th>Volume (24h)</th>
+                        <th>Circulating Supply</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Bitcoin -->
+                    <tr>
+                        <td>1</td>
+                        <td class="crypto-name">
+                            <strong>Bitcoin</strong>
+                            <span class="symbol">BTC</span>
+                        </td>
+                        <td class="price">$87,050</td>
+                        <td class="change">+3.03%</td>
+                        <td class="market-cap">$1.74T</td>
+                        <td class="volume">$49.3B</td>
+                        <td class="supply">19.95M BTC</td>
+                    </tr>
+
+                    <!-- Ethereum -->
+                    <tr>
+                        <td>2</td>
+                        <td class="crypto-name">
+                            <strong>Ethereum</strong>
+                            <span class="symbol">ETH</span>
+                        </td>
+                        <td class="price">$2,828.09</td>
+                        <td class="change">+3.00%</td>
+                        <td class="market-cap">$342.7B</td>
+                        <td class="volume">$18.5B</td>
+                        <td class="supply">120.7M ETH</td>
+                    </tr>
+
+                    <!-- Tether -->
+                    <tr>
+                        <td>3</td>
+                        <td class="crypto-name">
+                            <strong>Tether</strong>
+                            <span class="symbol">USDT</span>
+                        </td>
+                        <td class="price">$1.00</td>
+                        <td class="change">+0.01%</td>
+                        <td class="market-cap">$184.4B</td>
+                        <td class="volume">$68.6B</td>
+                        <td class="supply">184.5B USDT</td>
+                    </tr>
+
+                    <!-- XRP -->
+                    <tr>
+                        <td>4</td>
+                        <td class="crypto-name">
+                            <strong>XRP</strong>
+                            <span class="symbol">XRP</span>
+                        </td>
+                        <td class="price">$2.07</td>
+                        <td class="change">+6.47%</td>
+                        <td class="market-cap">$124.5B</td>
+                        <td class="volume">$3.59B</td>
+                        <td class="supply">60.3B XRP</td>
+                    </tr>
+
+                    <!-- BNB -->
+                    <tr>
+                        <td>5</td>
+                        <td class="crypto-name">
+                            <strong>BNB</strong>
+                            <span class="symbol">BNB</span>
+                        </td>
+                        <td class="price">$849.88</td>
+                        <td class="change">+2.73%</td>
+                        <td class="market-cap">$117.3B</td>
+                        <td class="volume">$1.26B</td>
+                        <td class="supply">137.7M BNB</td>
+                    </tr>
+
+                    <!-- Solana -->
+                    <tr>
+                        <td>6</td>
+                        <td class="crypto-name">
+                            <strong>Solana</strong>
+                            <span class="symbol">SOL</span>
+                        </td>
+                        <td class="price">$132.38</td>
+                        <td class="change">+3.61%</td>
+                        <td class="market-cap">$74.3B</td>
+                        <td class="volume">$3.83B</td>
+                        <td class="supply">559.1M SOL</td>
+                    </tr>
+
+                    <!-- USDC -->
+                    <tr>
+                        <td>7</td>
+                        <td class="crypto-name">
+                            <strong>USDC</strong>
+                            <span class="symbol">USDC</span>
+                        </td>
+                        <td class="price">$1.00</td>
+                        <td class="change">-0.01%</td>
+                        <td class="market-cap">$73.9B</td>
+                        <td class="volume">$5.22B</td>
+                        <td class="supply">73.9B USDC</td>
+                    </tr>
+
+                    <!-- TRON -->
+                    <tr>
+                        <td>8</td>
+                        <td class="crypto-name">
+                            <strong>TRON</strong>
+                            <span class="symbol">TRX</span>
+                        </td>
+                        <td class="price">$0.275</td>
+                        <td class="change">+0.46%</td>
+                        <td class="market-cap">$26.1B</td>
+                        <td class="volume">$486.1M</td>
+                        <td class="supply">94.7B TRX</td>
+                    </tr>
+
+                    <!-- More rows can be added here from the CSV data later -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination">
+            <button class="btn btn-secondary" disabled>Previous</button>
+            <span class="page-info">Page 1 of 37</span>
+            <button class="btn btn-secondary">Next</button>
+        </div>
+
+        <!-- Quick Stats -->
+        <div class="quick-stats">
+            <div class="stat-item">
+                <h3>Total Cryptocurrencies</h3>
+                <p class="stat-number">369</p>
+            </div>
+            <div class="stat-item">
+                <h3>Total Market Cap</h3>
+                <p class="stat-number">$2.1T</p>
+            </div>
+            <div class="stat-item">
+                <h3>24h Volume</h3>
+                <p class="stat-number">$152.4B</p>
+            </div>
+            <div class="stat-item">
+                <h3>Bitcoin Dominance</h3>
+                <p class="stat-number">48.2%</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 CRYPTODATA. All rights reserved.</p>
+    </footer>
+
+    <script src="../scripts/api-client.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/crypto-list.js"></script> 
+</body>
+</html>

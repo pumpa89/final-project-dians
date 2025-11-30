@@ -1,0 +1,72 @@
+<!-- crypto-details.html - АЖУРИРАНА ВЕРЗИЈА -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto Details - Crypto Analyzer</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <!-- Navigation (unchanged) -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>CRYPTODATA</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-list.html" class="nav-link">Crypto List</a>
+                </li>
+                <li class="nav-item">
+                    <a href="crypto-details.html" class="nav-link active">Details</a>
+                </li>
+                <li class="nav-item">
+                    <a href="analysis.html" class="nav-link">Analysis</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <!-- Crypto Selector -->
+        <div class="crypto-selector">
+            <label for="crypto-select">Select Cryptocurrency:</label>
+            <select id="crypto-select">
+                <option value="bitcoin">Bitcoin (BTC)</option>
+                <option value="ethereum">Ethereum (ETH)</option>
+                <option value="tether">Tether (USDT)</option>
+                <option value="ripple">XRP (XRP)</option>
+                <option value="binancecoin">BNB (BNB)</option>
+                <option value="solana">Solana (SOL)</option>
+                <option value="usd-coin">USDC (USDC)</option>
+                <option value="tron">TRON (TRX)</option>
+            </select>
+            <button class="btn btn-primary" id="load-crypto">Load Data</button>
+        </div>
+
+        <!-- Content will be dynamically loaded here -->
+        <div id="crypto-details-content">
+            <!-- Default message -->
+            <div class="default-message">
+                <p>Please select a cryptocurrency from the dropdown above to view details.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2025 CRYPTODATA. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+
+    <script src="../scripts/api-client.js"></script>
+    <script src="../scripts/script.js"></script>
+    <script src="../scripts/crypto-details.js"></script>
+</body>
+</html>
